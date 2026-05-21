@@ -495,6 +495,64 @@ li {
     }
 }
 
+/* ==========================================
+   BUTTON GLOBAL RESTYLE & CONTAINMENT
+   ========================================== */
+
+/* 1. CONTAINMENT (Main fix) */
+.btn-nav, 
+button[type="submit"] {
+    display: inline-block; /* Essential: Allows padding to define size, prevents stretching */
+    width: auto; /* Buttons only take up the space their text needs */
+    max-width: 90%; /* Safety net: Button never exceeds 90% of screen width */
+    margin: 10px auto; /* Centers the button if needed */
+}
+
+/* 2. BOUTIQUE DESIGN REFINEMENT */
+.btn-nav,
+button[type="submit"] {
+    background: transparent;
+    border: 2px solid var(--accent-krimson); /* The signature red edge */
+    color: var(--text-light);
+    font-family: var(--font-accent); /* Keep it on brand */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem; /* Professional, understated size */
+    letter-spacing: 0.15rem; /* Wide tracking for exclusivity */
+    
+    /* Perfect Padding & Transition */
+    padding: 16px 32px; /* Sufficient visual weight */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Professional animation curve */
+    
+    /* Fixes potential mobile text wrapping */
+    white-space: nowrap; 
+}
+
+/* 3. PROFESSIONAL HOVER STATE */
+.btn-nav:hover,
+button[type="submit"]:hover {
+    background-color: var(--accent-krimson);
+    color: #fff;
+    border-color: var(--accent-krimson);
+    transform: translateY(-2px); /* Subtle elevation */
+    box-shadow: 0 5px 15px rgba(220, 20, 60, 0.2); /* Soft crimson glow */
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS (Breakpoints)
+   ========================================== */
+@media (max-width: 768px) {
+    /* Optional: If you want buttons to be full width on small screens *within* containment */
+    
+    .btn-nav, 
+    button[type="submit"] {
+        width: 100%;
+        max-width: 400px;
+        display: block; 
+    }
+    
+}
+
 @media (min-width: 1024px) {
     .mobile-cta-bar { display: none; }
     .hero h1 { font-size: 5rem; }
