@@ -113,22 +113,25 @@ nav {
 .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0; /* Keep it anchored to the right */
     width: var(--drawer-width);
     height: 100vh;
     background-color: var(--bg-dark);
     display: flex;
     flex-direction: column;
     padding: 120px 40px;
-    visibility: hidden;
-    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    z-index: 2000;
     border-left: 1px solid rgba(255,255,255,0.1);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
-    z-index: 2000;
+    
+   
+    transform: translateX(100%); 
+    visibility: hidden;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), visibility 0.5s;
 }
 
 .nav-menu.active { 
-    right: 0; 
+    transform: translateX(0); /* Slides it into view */
     visibility: visible;
 }
 
@@ -336,7 +339,7 @@ footer { padding: 40px; text-align: center; font-size: 0.9rem; color: #666; }
     flex: 1;
     background-size: cover;
     background-position: center;
-    width: 1200px;
+    min-height: 300px;
 }
 
 .pillar-content {
