@@ -469,11 +469,9 @@ li {
     border-color: var(--accent-krimson);
     outline: none;
 }
-#final-cta {
-    min-height: 50vh;
-    text-align: center;
-    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), 
-                url('assets/cta-bg.jpg') no-repeat center center/cover;
+
+#contact {
+    padding: 100px 5%;
 }
 
 .cta-content h2 {
