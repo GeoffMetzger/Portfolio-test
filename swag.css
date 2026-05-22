@@ -23,6 +23,12 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* This kills the horizontal scroll */
+    position: relative;
+}
+
 /* 2. NAVIGATION */
 nav {
     padding: 20px 5%;
@@ -107,19 +113,24 @@ nav {
 .nav-menu {
     position: fixed;
     top: 0;
-    right: calc(var(--drawer-width) * -1);
+    right: -100%;
     width: var(--drawer-width);
     height: 100vh;
     background-color: var(--bg-dark);
     display: flex;
     flex-direction: column;
     padding: 120px 40px;
+    visibility: hidden;
     transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     border-left: 1px solid rgba(255,255,255,0.1);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    z-index: 2000;
 }
 
-.nav-menu.active { right: 0; }
+.nav-menu.active { 
+    right: 0; 
+    visibility: visible;
+}
 
 .nav-menu a {
     font-size: 1.2rem;
