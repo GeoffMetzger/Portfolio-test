@@ -6,7 +6,8 @@
     <title>Integrity Programming | High-End Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="swag.css">
+    <!--<link rel="stylesheet" href="swag.css">-->
+    <link rel="stylesheet" href="swag.css?v=20260819-1">
     <!--<script src="skript.js"></script>-->
 </head>
 <body>
@@ -15,48 +16,100 @@
     </div>
 
     <nav>
-        <div class="logo">Integrity Programming</div>
-        <div class="nav-controls">
-            <a href="#contact" class="btn-nav">GET A QUOTE</a>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <div class="logo">Integrity Programming</div>
+
+    <div class="nav-controls">
+        <a href="#contact" class="btn-nav">Contact Us</a>
+
+        <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open navigation menu"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-menu" id="nav-menu">
+        <div
+            class="menu-close"
+            id="menu-close"
+            role="button"
+            tabindex="0"
+            aria-label="Close navigation menu"
+        >
+            &times;
         </div>
 
-        <div class="nav-menu" id="nav-menu">
-            <div class="menu-close" id="menu-close">&times;</div>
-            <a href="#mission">Mission</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <!--<a href="#About">About</a>-->
-            <!--<a href="#FAQ">FAQ</a>-->
-            <a href="https://coffee-kids-code.vercel.app/index.html">Blog</a>
-        </div>
-    </nav>
+        <a href="#mission">Mission</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Products</a>
+        <a href="#founder">Founder</a>
+
+        <a
+            href="https://coffee-kids-code.vercel.app/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Blog
+        </a>
+    </div>
+</nav>
 
     <main>
         <header id="hero" class="hero">
-            <h1 class="glitch-text">Code with <span class="krimson-text">Integrity.</span></h1>
-            <p>5+ Years of engineering high-performance web applications and AI driven solutions</p>
+            <span class="label">SOFTWARE PRODUCTS + ENGINEERING</span>
+
+            <h1 class="glitch-text">
+                Build with <span class="krimson-text">Integrity.</span>
+            </h1>
+
+            <p>
+                Practical software products built to help people learn, work, and grow.
+            </p>
         </header>
 
         <section id="mission">
-    <div class="mission-grid">
-        <div class="definition-side">
-            <span class="label">PHILOSOPHY / 01</span>
-            <h2>Integrity <span class="phonetic">/inˈteɡrədē/</span></h2>
-            <p>The state of being whole, undivided, and uncompromising in adherence to a code of values.</p>
-        </div>
-        
-        <div class="statement-side">
-            <span class="label">MISSION / 02</span>
-            <h2 class="mission-text">Building digital infrastructure with precision and absolute integrity.</h2>
-            <p>5+ years of engineering high-performance web applications and AI-driven solutions.</p>
-        </div>
-    </div>
-</section>
+            <div class="mission-grid">
+
+                <!-- Brand Philosophy -->
+                <div class="definition-side">
+                    <span class="label">PHILOSOPHY / 01</span>
+
+                    <h2>
+                        Integrity
+                        <span class="phonetic">/inˈteɡrədē/</span>
+                    </h2>
+
+                    <p>
+                        The state of being whole, undivided, and uncompromising
+                        in adherence to a code of values.
+                    </p>
+                </div>
+
+                <!-- Company Mission -->
+                <div class="statement-side">
+                    <span class="label">MISSION / 02</span>
+
+                    <h2 class="mission-text">
+                        Building technology that creates real opportunities
+                        for learning, growth, and progress.
+                    </h2>
+
+                    <p>
+                        Integrity Programming develops education, career-growth,
+                        productivity, and community-focused software — combining
+                        thoughtful design, modern engineering, and practical
+                        problem solving.
+                    </p>
+                </div>
+
+            </div>
+        </section>
 
         <!--<section id="benefits" class="split-section bg-grey">
         <div class="split-text">
@@ -74,54 +127,73 @@
     </section>-->
 
     <section id="integrity-pillars" class="split-section">
-    <div class="split-text bg-grey">
-        <h3 class="label">INTEGRITY STANDARDS</h3>
-        
-        <div class="pillar-nav">
-            <span class="pillar-link active" data-pillar="01">01</span>
-            <span class="pillar-link" data-pillar="02">02</span>
-            <span class="pillar-link" data-pillar="03">03</span>
-            <span class="pillar-link" data-pillar="04">04</span>
+        <div class="split-text bg-grey">
+            <h3 class="label">INTEGRITY STANDARDS</h3>
+
+            <div class="pillar-nav">
+                <span class="pillar-link active" data-pillar="01">01</span>
+                <span class="pillar-link" data-pillar="02">02</span>
+                <span class="pillar-link" data-pillar="03">03</span>
+                <span class="pillar-link" data-pillar="04">04</span>
+            </div>
+
+            <div class="pillar-text-wrapper pillar-content">
+                <h3 class="pillar-title">Structural Integrity</h3>
+
+                <p class="pillar-tagline">
+                    Reliable software starts with disciplined engineering.
+                </p>
+
+                <ul class="pillar-list" id="pillar-list">
+                    <li>Clean, maintainable code built for long-term growth</li>
+                    <li>Thoughtful architecture instead of fragile shortcuts</li>
+                    <li>Security, usability, and performance considered from the start</li>
+                    <li>Products designed around real user needs and measurable value</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="pillar-text-wrapper pillar-content">
-            <h3 class="pillar-title">Structural Integrity</h3>
-            <p class="pillar-tagline">High-class code is not a PLUS. It is a MUST!</p>
-            <ul class="pillar-list" id="pillar-list">
-                <li>5+ years of uncompromised engineering</li>
-                <li>Clean code by our own strict standards</li>
-            </ul>
-        </div>
-    </div>
+        <div
+            class="split-image"
+            style="background-image: url('assets/imgs/integrityBlockImage.jpg')"
+        ></div>
+    </section>
+    
+    
+    <section id="services">
+        <article class="services-card">
+            <div class="container">
+                <h2>Front-End</h2>
+                <h3>Product Experiences</h3>
+                <p>
+                    Building responsive, accessible, and intuitive interfaces
+                    for modern web applications and learning platforms.
+                </p>
+            </div>
+        </article>
 
-    <div class="split-image" style="background-image: url('assets/imgs/integrityBlockImage.jpg')"></div>
-</section>
+        <article class="services-card">
+            <div class="container">
+                <h2>Back-End</h2>
+                <h3>Application Systems</h3>
+                <p>
+                    Engineering APIs, authentication, databases, and scalable
+                    server-side systems that support reliable software products.
+                </p>
+            </div>
+        </article>
 
-        <section id="services">
-            <article class="services-card">
-                <div class="container">
-                    <h2>Front-End</h2>
-                    <h3>Development</h3>
-                    <p>Building responsive and accessible user interfaces with the latest web technologies.</p>
-                </div>
-            </article>
-
-            <article class="services-card">
-                <div class="container">
-                    <h2>Back-End</h2>
-                    <h3>Systems</h3>
-                    <p>Engineering robust server-side logic and database architectures for scale.</p>
-                </div>
-            </article>
-
-            <article class="services-card">
-                <div class="container">
-                    <h2>AI</h2>
-                    <h3>Integration</h3>
-                    <p>Implementing smart solutions and automation into modern web workflows.</p>
-                </div>
-            </article>
-        </section>
+        <article class="services-card">
+            <div class="container">
+                <h2>AI</h2>
+                <h3>Automation & Integration</h3>
+                <p>
+                    Integrating AI, intelligent automation, and modern workflows
+                    into practical products and business systems.
+                </p>
+            </div>
+        </article>
+    </section>
 
         <!--<section id="mission">
             <div class="mission-content">
@@ -132,57 +204,241 @@
         </section>-->
 
         <section id="portfolio">
-    <div class="bento-grid">
-        <div class="bento-tile large">
-            <div class="tile-bg" style="background-image: url('assets/imgs/OpenDoorAcademy.png');"></div>
-            <div class="tile-content">
-                <span class="label">ED-TECH PROJECT</span>
-                <h3>OPEN DOORS ACADEMY</h3>
-                <p>A math app for grades 1-8. Built for impact.</p>
-                <!--<a href="#" class="btn-nav">VIEW PROJECT</a>-->
+        <div class="bento-grid">
+
+            <!-- FLAGSHIP PRODUCT -->
+            <div class="bento-tile large">
+                <div
+                    class="tile-bg"
+                    style="background-image: url('assets/imgs/integrityertificationTrainer.png');">
+                </div>
+
+                <div class="tile-content">
+                    <span class="label">FLAGSHIP PRODUCT / CERTIFICATION TRAINING</span>
+
+                    <h3>INTEGRITY CERTIFICATION TRAINER</h3>
+
+                    <p>
+                        A structured IT certification training platform combining
+                        lessons, practice questions, exams, progress tracking,
+                        mastery analysis, and guided learning paths.
+                    </p>
+
+                    <!--
+                        Keep this disabled until the production application
+                        is deployed. Once live, replace # with the production URL.
+                    -->
+                    <!--
+                    <a href="#" class="btn-nav">
+                        VIEW PRODUCT
+                    </a>
+                    -->
+                </div>
+            </div>
+
+
+            <!-- OPEN DOORS ACADEMY -->
+            <div class="bento-tile">
+                <div
+                    class="tile-bg"
+                    style="background-image: url('assets/imgs/OpenDoorAcademy.png');">
+                </div>
+
+                <div class="tile-content">
+                    <span class="label">K-8 EDUCATION</span>
+
+                    <h3>Open Doors Academy</h3>
+
+                    <p>
+                        An educational platform designed to help students
+                        build skills through structured and adaptive learning.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- INTERACTIVE CODE CAMP -->
+            <div class="bento-tile">
+                <div
+                    class="tile-bg"
+                    style="background-image: url('assets/imgs/code.jpg');">
+                </div>
+
+                <div class="tile-content">
+                    <span class="label">IN DEVELOPMENT</span>
+
+                    <h3>Interactive Code Camp</h3>
+
+                    <p>
+                        Hands-on software development training built around
+                        coding exercises, debugging, projects, and
+                        job-ready engineering skills.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- COFFEE + KIDS + CODE -->
+            <div class="bento-tile">
+                <div
+                    class="tile-bg"
+                    style="background-image: url('assets/imgs/CKC.png');">
+                </div>
+
+                <div class="tile-content">
+                    <span class="label">FOUNDER BLOG</span>
+
+                    <h3>Coffee + Kids + Code</h3>
+
+                    <a
+                        href="https://coffee-kids-code.vercel.app/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-nav">
+                        VIEW PROJECT
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- CHICAGO AID HUB -->
+            <div class="bento-tile">
+                <div
+                    class="tile-bg"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0, 0, 0, 0.6),
+                            rgba(0, 0, 0, 0.6)
+                        ),
+                        url('assets/imgs/ComunityRelief.png');
+                    ">
+                </div>
+
+                <div class="tile-content">
+                    <span class="label">COMMUNITY RESOURCE</span>
+
+                    <h3>Chicago Aid Hub</h3>
+
+                    <a
+                        href="https://community-aid-hub.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-nav">
+                        VIEW PROJECT
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- CHICAGO BATHROOM FINDER -->
+            <div class="bento-tile">
+                <div
+                    class="tile-bg"
+                    style="background-image: url('assets/imgs/iGottaPee.png');">
+                </div>
+
+                <div class="tile-content">
+                    <span class="label">LOCAL UTILITY</span>
+
+                    <h3>Chicago Bathroom Finder</h3>
+
+                    <a
+                        href="https://i-gotta-pee.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-nav">
+                        VIEW PROJECT
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Founder / Company Story -->
+    <!--<section id="founder" class="split-section bg-white">
+
+        <div
+            class="split-image testimonial-portrait"
+            style="background-image: url('assets/imgs/client-headshot.jpg')">
+        </div>
+
+        <div class="split-text">
+            <span class="label">FOUNDER / COMPANY STORY</span>
+
+            <span class="quote-icon">“</span>
+
+            <blockquote class="testimonial-body">
+                Integrity Programming was built around a simple idea:
+                technology should solve real problems, create opportunities,
+                and be built with the kind of care and discipline its users
+                deserve.
+            </blockquote>
+
+            <div class="testimonial-author">
+                <strong>Geoff Metzger</strong><br>
+                Founder & Software Engineer<br>
+                Integrity Programming
             </div>
         </div>
 
-        <div class="bento-tile">
-            <div class="tile-bg" style="background-image: url('assets/imgs/CKC.png');"></div>
-            <div class="tile-content">
-                <span class="label">BLOG</span>
-                <h3>Coffee + Kids + Code</h3>
-                <a href="https://coffee-kids-code.vercel.app/index.html" class="btn-nav">VIEW PROJECT</a>
-            </div>
-        </div>
+    </section>-->
 
-        <!--<div class="bento-tile">
-            <div class="tile-bg" style="background-image: url('assets/imgs/mid-level-template.png');"></div>
-            <div class="tile-content">
-                <span class="label">PERSONAL WEBSITE</span>
-                <h3>Consulting Landing Page</h3>
-                <a href="https://consulting-midlevel-template-3thm8or5r-geoff-metzs-projects.vercel.app/" class="btn-nav">VIEW PROJECT</a>
-            </div>
-        </div>-->
 
-        <div class="bento-tile">
-            <div class="tile-bg" style="background-image: url('assets/imgs/certQuizApp.png');"></div>
-            <div class="tile-content">
-                <span class="label">CERTIFICATION PREP</span>
-                <h3>AWS Certification</h3>
-                <a href="https://aws-cpc-quiz-trainer.vercel.app/" class="btn-nav">VIEW PROJECT</a>
-            </div>
-        </div>
 
-        <div class="bento-tile">
-            <div class="tile-bg" style="background-image: url('assets/imgs/ComunityRelief.png');"></div>
-            <div class="tile-content">
-                <span class="label">COMMUNITY AID</span>
-                <h3>Chicago Aid Hub</h3>
-                <a href="https://community-aid-hub.vercel.app/" class="btn-nav">VIEW PROJECT</a>
-            </div>
+
+
+
+
+
+    <!-- Founder / Company Story -->
+<section id="founder" class="split-section" style="background-color: #f4f1ea; color: #121212;">
+
+    <!-- Temporary visual block until founder photo is added -->
+    <!--<div
+    class="split-image testimonial-portrait"
+    style="background-image: url('assets/imgs/geoff-metzger.jpg')">
+    </div>-->
+    <div class="split-image testimonial-portrait" style="background:linear-gradient(135deg, #121212 0%,#252525 55%, #9e1b32 100%); min-height: 650px;">
+
+    </div>
+
+    <div class="split-text" style="background-color: #f4f1ea; color: #121212;">
+        <span class="label">FOUNDER / COMPANY STORY</span>
+
+        <span class="quote-icon" style="color: #9e1b32;">“</span>
+
+        <blockquote
+            class="testimonial-body"
+            style="color: #121212;"
+        >
+            Integrity Programming was built around a simple idea:
+            technology should solve real problems, create opportunities,
+            and be built with the kind of care and discipline its users
+            deserve.
+        </blockquote>
+
+        <div
+            class="testimonial-author"
+            style="color: #121212;"
+        >
+            <strong style="color: #9e1b32;">
+                Geoff Metzger
+            </strong>
+            <br>
+
+            Founder &amp; Software Engineer
+            <br>
+
+            Integrity Programming
         </div>
     </div>
-</section>
 
+</section>
 <!--Testimonial section-->
-<section id="testimonials" class="split-section bg-white">
+<!--<section id="testimonials" class="split-section bg-white">
     <div class="split-image testimonial-portrait" style="background-image: url('assets/imgs/client-headshot.jpg')">
         </div>
     <div class="split-text">
@@ -195,32 +451,63 @@
             Founder, Open Doors Academy
         </cite>
     </div>
-</section>
+</section>-->
 
 <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="label">READY TO BUILD?</h2>
-            <h3 class="section-title">Get a Quote</h3>
-            <p class="contact-intro">Describe your project, and let's see if we're a fit for the "Secret Sauce."</p>
-            
-            <form id="quote-form" action="https://formspree.io/f/mbdbobod" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="YOUR NAME" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="EMAIL ADDRESS" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="PROJECT DETAILS (TELL ME ABOUT APP IDEA)" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-nav">SEND REQUEST</button>
-            </form>
-        </div>
-    </section>
+    <div class="container">
+        <h2 class="label">LET'S CONNECT</h2>
+
+        <h3 class="section-title">
+            Build with Integrity Programming
+        </h3>
+
+        <p class="contact-intro">
+            Have a product question, partnership idea, software project,
+            or engineering opportunity? Let's talk.
+        </p>
+
+        <form
+            id="quote-form"
+            action="https://formspree.io/f/mbdbobod"
+            method="POST"
+        >
+            <div class="form-group">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="YOUR NAME"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="EMAIL ADDRESS"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <textarea
+                    name="message"
+                    placeholder="PRODUCT QUESTION, PROJECT DETAILS, OR OPPORTUNITY"
+                    rows="5"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn-nav">
+                SEND MESSAGE
+            </button>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Integrity Programming. All rights reserved.</p>
+        <p>&copy; 2026 Integrity Programming. All rights reserved.</p>
     </footer>
 
     <script>
